@@ -7,6 +7,7 @@ export const comandos : ICommands = {
     '!discord' : 'Faça parte da nossa comunidade: https://discord.gg/pzRrsEgHpn',
     '!instagram' : 'Siga a Rafa no instagram: https://instagram.com/rafaballerini',
     '!youtube' : 'Se inscreva no canal da Rafa: https://youtube.com/RafaellaBallerini',
+    '!twitter' : 'Siga a Rafa no twitter: https://twitter.com/ballerinirafa',
     '!github' : 'Veja o github da Rafa: https://github.com/rafaballerini',
     '!org' : 'Nossa organização no Github: https://github.com/Ballerini-Server',
     '!rock' : 'Ouça a playlist de Rock da Rafa: https://open.spotify.com/embed/playlist/5TUxgTIxzLbLVh7RUf9V8i',
