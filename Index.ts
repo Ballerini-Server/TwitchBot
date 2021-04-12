@@ -1,8 +1,8 @@
 import { TwitchChat} from 'https://deno.land/x/tmi/mod.ts';
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 import { comandos } from './Commands.ts';
-import { ProhibitedWords } from './ProhibitedWords.ts';
-import { TimeOut } from './TimeOut.ts';
+// import { ProhibitedWords } from './ProhibitedWords.ts';
+// import { TimeOut } from './TimeOut.ts';
 
 //Valores criados em um .env
 const{twitchtoken, twitchchannel, twitchbot} = config();
@@ -18,11 +18,11 @@ try {
         if (Object.getOwnPropertyNames(comandos).includes(ircMsg.message)) {
             channel.send(comandos[ircMsg.message]);
         }
-        if (ProhibitedWords.find(word => {
-            return !!ircMsg.message.includes(word)
-        })){
-            TimeOut(ircMsg, channel)
-        }
+        // if (ProhibitedWords.find(word => {
+        //     return !!ircMsg.message.includes(word)
+        // })){
+        //     TimeOut(ircMsg, channel)
+        // }
     
     });
     console.log('funcionando');
